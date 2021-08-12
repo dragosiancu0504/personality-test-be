@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "answers",
+  "info": {
+    "name": "answer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "introScore": {
+      "type": "integer"
+    },
+    "extroScore": {
+      "type": "integer"
+    },
+    "question": {
+      "model": "question",
+      "via": "answers"
+    }
+  }
+}

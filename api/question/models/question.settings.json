@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "question",
+  "info": {
+    "name": "question"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "answers": {
+      "via": "question",
+      "collection": "answer"
+    }
+  }
+}
